@@ -13,6 +13,19 @@ The system integrates:
 - Feature importance analysis  
 - Interactive dashboard for real-time predictions  
 
+## 🚀 How to Run
+
+### 1. Install dependencies
+pip install -r requirements.txt
+
+### 2. Train models (required) - Pre-trained files --> https://drive.google.com/drive/folders/1MHLHmMicIQ7RKwa5qb4ZnzLcqH8g12pw?usp=sharing
+python train_and_save.py
+
+### 3. Evaluate models (optional but recommended)
+python evaluate.py
+
+### 4. Run dashboard
+streamlit run app.py
 ---
 
 ## 📊 Datasets Used  
