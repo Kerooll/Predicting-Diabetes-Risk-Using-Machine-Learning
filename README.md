@@ -1,78 +1,70 @@
-# 🧪 Diabetes Risk Prediction System
-
-A machine learning-based system designed to predict diabetes risk using both lifestyle and clinical datasets. This project aims to support early detection and raise awareness through an interactive dashboard.
+# 🧪 Diabetes Risk Prediction System  
+🚀 Machine Learning | 📊 Data Analytics | 🧠 Healthcare AI  
 
 ---
 
-## 📌 Overview
+## 📌 Overview  
 
-Diabetes is a growing global health concern. Early detection is critical but often limited by access to clinical testing. This project leverages machine learning to predict diabetes risk using non-invasive and clinical indicators.
+This project presents a **machine learning-based diabetes risk prediction system** developed as a Final Year Project.  
+It focuses on **early detection and awareness** by leveraging both **lifestyle data** and **clinical health indicators**.
 
 The system integrates:
-- Predictive modeling (ML algorithms)
-- Feature importance analysis
-- Interactive dashboard for real-time predictions
+- Predictive machine learning models  
+- Feature importance analysis  
+- Interactive dashboard for real-time predictions  
 
 ---
 
-## 📊 Datasets Used
+## 📊 Datasets Used  
 
-### 1. BRFSS 2015 Dataset
-- ~250,000 records
-- Lifestyle & health indicators (BMI, physical activity, smoking, etc.)
-- Multi-class classification:
-  - 0: No diabetes
-  - 1: Prediabetes
-  - 2: Diabetes
+### 🔹 BRFSS 2015 Dataset  
+- ~250,000 records (large-scale real-world dataset)  
+- Lifestyle & behavioral indicators (BMI, physical activity, smoking, etc.)  
+- Multi-class classification:  
+  - 0 → No Diabetes  
+  - 1 → Prediabetes  
+  - 2 → Diabetes  
 
-### 2. PIMA Indian Diabetes Dataset
-- Clinical dataset
-- Features include glucose, insulin, BMI, age, etc.
-- Binary classification:
-  - 0: No diabetes
-  - 1: Diabetes
+### 🔹 PIMA Indian Diabetes Dataset  
+- Clinical dataset  
+- Features: Glucose, BMI, Insulin, Age, etc.  
+- Binary classification:  
+  - 0 → No Diabetes  
+  - 1 → Diabetes  
 
 ---
 
-## ⚙️ Features
+## ⚙️ Key Features  
 
-- Data preprocessing (missing values, encoding, normalization)
-- Class imbalance handling using **SMOTE**
+- Data preprocessing (missing values, encoding, normalization)  
+- Class imbalance handling using **SMOTE**  
 - Machine learning models:
-  - Logistic Regression
-  - Random Forest
-  - XGBoost
+  - Logistic Regression  
+  - Random Forest  
+  - XGBoost  
 - Model evaluation:
-  - Accuracy, Precision, Recall, F1-score
-  - ROC Curve & AUC
-  - Confusion Matrix
-- Feature importance analysis
-- Interactive **Streamlit dashboard**
+  - Accuracy, Precision, Recall, F1-score  
+  - ROC Curve & AUC  
+  - Confusion Matrix  
+- Feature importance analysis  
+- Interactive **Streamlit dashboard**  
 
 ---
 
-## 🧠 Key Insights
+## 🧠 Key Insights  
 
-- **Logistic Regression + SMOTE** performed best for handling class imbalance in BRFSS
-- **Random Forest** achieved highest performance on PIMA dataset
-- Lifestyle data (BRFSS) is noisier but useful for large-scale screening
-- Clinical data (PIMA) provides more precise predictions
-
----
-
-## 🖥️ Dashboard Features
-
-- Model comparison (BRFSS vs PIMA)
-- ROC curves for all models
-- Confusion matrices visualization
-- Risk prediction tool (PIMA-based)
-- Health factor explanations based on user input
+- **Logistic Regression + SMOTE** improved minority class detection (prediabetes)  
+- **Random Forest** achieved highest performance on PIMA dataset  
+- BRFSS (lifestyle data) is useful for **large-scale screening**  
+- PIMA (clinical data) provides **more precise predictions**  
 
 ---
 
-## 🚀 How to Run
+## ⚠️ Model Files  
 
-### 1. Clone the repository
+Pre-trained `.pkl` model files are **not included** due to GitHub size limitations.
+
+To generate trained models locally, run:
+
 ```bash
-git clone https://github.com/yourusername/diabetes-risk-prediction.git
-cd diabetes-risk-prediction
+python train_and_save.py
